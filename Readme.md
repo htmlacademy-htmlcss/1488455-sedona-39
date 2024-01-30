@@ -3,7 +3,8 @@
 * Студент: [Надежда Кравченко](https://up.htmlacademy.ru/htmlcss/39/user/1488455).
 * Наставник: [Ирина
 Антипина](https://htmlacademy.ru/profile/id2108789).
-
+* Сайт: [Мой проект Седона]
+(https://krevedkoknp.github.io/1488455-sedona-39/).
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
