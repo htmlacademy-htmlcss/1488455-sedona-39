@@ -7,16 +7,16 @@
   <body>
     <header class="main-header">
       <nav class="navigation">
-        <img class="logo" src="" alt="Логотип Sedona">
+        <img class="logo" src="" alt="Логотип города Седона">
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Главная</a>
+            <a class="navigation-link navigation-link-current" href="#">Главная</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="about.html">О нас</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="hotels.html">Гостиницы</a>
+            <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
         <ul class="navigation-list navigation-user">
@@ -27,18 +27,16 @@
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">
-              <span class="vissually-hidden">лайки</span>
-            </a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link button button-wish" href="#">
-              Хочу сюда!
+              <span class="vissually-hidden">Избранное</span>
             </a>
           </li>
         </ul>
+        <a class="navigation-link button button-wish" href="#">
+          Хочу сюда!
+        </a>
       </nav>
     </header>
-    <main class="main-index">
+    <main class="main-content">
       <section class="hero">
         <h1 class="vissually-hidden">Sedona</h1>
         <div class="hero-wrapper">
@@ -75,8 +73,8 @@
             <img class="advantages-items-picture" src="" alt="Мост дьявола">
           </li>
         </ul>
-        </section>
-        <section class="service">
+      </section>
+      <section class="service">
         <h2 class="service-offer">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
         <p class="service-description">Опытный персонал и качественное обслуживание!</p>
         <ul class="service-list">
@@ -106,8 +104,10 @@
         <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
         <p class="newsletter-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-          <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
+          <label class="vissually-hidden" for="newsletter-email">
+            <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
             required>
+          </label>
           <button class="send">Подписаться</button>
         </form>
       </section>
@@ -142,4 +142,5 @@
       </div>
     </footer>
   </body>
+
 </html>
