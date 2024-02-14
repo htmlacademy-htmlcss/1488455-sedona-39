@@ -3,22 +3,23 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="main-header" data-test="header">
       <a class="navigation-logo" href="index.html">
-        <img class="logo" src="image/logo.svg" width="140" height="70.05" alt="Логотип Sedona">
+        <img class="logo" src="image/logo.svg" width="140" height="70" alt="Логотип Sedona">
       </a>
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link navigation-link-current">Главная</a>
+            <a class="navigation-link navigation-link-current" href="index.html">Главная</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="catalog.html">Гостиницы</a>
+            <a class="navigation-link">Гостиницы</a>
           </li>
         </ul>
       </nav>
@@ -36,7 +37,7 @@
             </a>
           </li>
         </ul>
-        <a class="navigation-link button" href="#">
+        <a class="navigation-link navigation-user-link button button-user" href="#">
           Хочу сюда!
         </a>
       </nav>
@@ -54,7 +55,7 @@
             <a class="breadcrumbs-link">Каталог</a>
           </li>
         </ol>
-        <h2 class="visually-hidden">Поиск гостиниц по фильтрам</h2>
+        <h2 class="visually-hidden subtitle">Поиск гостиниц по фильтрам</h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get" data-test="filter">
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Инфраструктура:</legend>
@@ -99,12 +100,12 @@
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Стоимость, ₽:</legend>
           </fieldset>
-          <button class="button" type="submit">Показать</button>
-          <button class="button-reset" type="reset">сбросить</button>
+          <button class="button button-apply" type="submit">Применить</button>
+          <button class="button button-reset" type="reset">Сбросить</button>
         </form>
       </header>
       <section class="result-search" data-test="catalog">
-        <h2 class="result-search-title">Найдено гостиниц: 38</h2>
+        <h2 class="result-search-title subtitle">Найдено гостиниц: 38</h2>
         <label class="visually-hidden" for="select">Сортировка</label>
         <select name="select-control" id="select">
           <option value="cheap">Сначала дешевые</option>
@@ -139,7 +140,7 @@
             <p class="hotel-card-description">Гостиница</p>
             <p class="hotel-card-prise">От 4000 ₽</p>
             <a class="button button-more" href="#">подробнее</a>
-            <button class="button button-favorite" type="button">в избранное</button>
+            <button class="button button-favorite " type="button">в избранное</button>
             <p class="hotel-card-rating four-stars">
               <span class="visually-hidden">4 звезды</span>
             </p>
@@ -155,7 +156,7 @@
             <p class="hotel-card-description">Гостиница</p>
             <p class="hotel-card-prise">От 5000 ₽</p>
             <a class="button button-more" href="#">подробнее</a>
-            <button class="button button-favorite" type="button">в избранном</button>
+            <button class="button button-favorite button-favorite-accent" type="button">в избранном</button>
             <p class="hotel-card-rating five-stars">
               <span class="visually-hidden">5 звезд</span>
             </p>
@@ -216,14 +217,14 @@
           </li>
         </ul>
       </section>
-      <section class="subscribe" data-test="subscribe">
-        <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
-        <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <section class="subscribe subscribe-inner" data-test="subscribe">
+        <h2 class="subscribe-title subtitle">Подпишитесь на рассылку</h2>
+        <p class="subscribe-description subtitle-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="subscribe-email">Введите ваш e-mail</label>
           <input class="form-email" placeholder="Ваш e-mail" type="email" name="subscribe-email" id="subscribe-email"
             required>
-          <button class="button-send" type="submit">Подписаться</button>
+          <button class="button button-send" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
