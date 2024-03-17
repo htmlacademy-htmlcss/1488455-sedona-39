@@ -56,10 +56,6 @@
             <ol class="breadcrumbs">
               <li class="breadcrumbs-item">
                 <a class="breadcrumbs-link" href="index.html">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="13" height="15" fill="currentColor" viewBox="0 0 13 15">
-                    <path fill="" d="m6.5.5-6 5.8v6.2h12V6.3L6.5.5Zm5 11h-10V6.7l5-4.8 5 4.8v4.8Z"/>
-                    <path fill="" d="M4.5 10.5h1V8h2v2.5h1V7h-4v3.5Z"/>
-                  </svg>
                   <span class="visually-hidden">Главная</span>
                 </a>
               </li>
@@ -75,17 +71,23 @@
                   <ul class="catalog-filter-list">
                     <li class="catalog-filter-item">
                       <label class="control">
-                        <input class="control-input" type="checkbox" name="pool" checked>Бассейн
+                        <input class="visually-hidden control-input" type="checkbox" name="pool" checked>
+                        <span class="control-mark"></span>
+                        Бассейн
                       </label>
                     </li>
                     <li class="catalog-filter-item">
                       <label class="control">
-                        <input class="control-input" type="checkbox" name="parking" checked>Парковка
+                        <input class="visually-hidden control-input" type="checkbox" name="parking" checked>
+                        <span class="control-mark"></span>
+                        Парковка
                       </label>
                     </li>
                     <li class="catalog-filter-item">
                       <label class="control">
-                        <input class="control-input" type="checkbox" name="wifi">Wi-Fi
+                        <input class="visually-hidden control-input" type="checkbox" name="wifi">
+                        <span class="control-mark"></span>
+                        Wi-Fi
                       </label>
                     </li>
                   </ul>
@@ -95,25 +97,45 @@
                   <ul class="catalog-filter-list">
                     <li class="catalog-filter-item">
                       <label class="control">
-                        <input class="control-input" type="radio" name="hotel-group" value="hotel" checked>Гостиница
+                        <input class="visually-hidden control-input" type="radio" name="hotel-group" value="hotel" checked>Гостиница
+                        <span class="control-mark control-mark-circle"></span>
                       </label>
                     </li>
                     <li class="catalog-filter-item">
                       <label class="control">
-                        <input class="control-input" type="radio" name="hotel-group" value="motel">Мотель
+                        <input class="visually-hidden control-input control-input-circle" type="radio" name="hotel-group" value="motel">Мотель
+                        <span class="control-mark control-mark-circle"></span>
                       </label>
                     </li>
                     <li class="catalog-filter-item">
                       <label class="control">
-                        <input class="control-input" type="radio" name="hotel-group" value="apartment">Апартаменты
+                        <input class="visually-hidden control-input" type="radio" name="hotel-group" value="apartment">Апартаменты
+                        <span class="control-mark control-mark-circle"></span>
                       </label>
                     </li>
                   </ul>
                 </fieldset>
                 <fieldset class="catalog-filter-group filter-column-prise">
                   <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-                  <input class="form-prise form-prise-less" type="text">
-                  <input class="form-prise form-prise-more" type="text">
+                  <div class="range">
+                    <div class="range-scale">
+                      <div class="range-bar" style="left: 0; width: 226px">
+                        <button class="range-toggle toggle-min" type="button">
+                        </button>
+                        <button class="range-toggle toggle-max" type="button">
+                        </button>
+                      </div>
+                    </div>
+                    <div class="range-wrapper-inputs">
+                      <label class="catalog-filter-label" for="min-prise"> от
+                        <input class="range-input range-input-less" type="number" value="0" name="min-prise">
+                      </label>
+                      <label class="catalog-filter-label" for="max-prise"> до
+                        <input class="range-input range-input-more" type="text" value="9000" name="max-prise">
+                      </label>
+                    </div>
+                  </div>
+
                 </fieldset>
                 <div class="catalog-filter-column filter-column-button">
                   <button class="button button-apply" type="submit">Применить</button>
@@ -126,12 +148,14 @@
           <div class="result-search-wrapper">
             <div class="result-search-header">
               <h2 class="result-search-title subtitle">Найдено гостиниц: 38</h2>
-              <label class="visually-hidden" for="select">Сортировка</label>
-              <select class="sorting" name="select-control" id="select">
+              <div class="select sorting-type">
+                <label class="visually-hidden" for="select">Сортировка</label>
+              <select class="select-control" name="select-control" id="select">
                 <option value="cheap">Сначала дешевые</option>
                 <option value="expensive">Сначала дорогие</option>
                 <option value="popular">Сначала популярные</option>
               </select>
+              </div>
               <ul class="sorting-list">
                 <li class="sorting-item">
                   <a class="button button-tile sorting-cads-active" href="#">
