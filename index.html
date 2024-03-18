@@ -211,12 +211,12 @@
           <section class="modal-content">
             <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
             <form class="booking-form" action="https://echo.htmlacademy.ru/" method="get">
-              <fieldset class="booking-fieldset">
-                <label class="booking-label" for="arrival-date">Дата заезда:</label>
+              <fieldset class="booking-fieldset fieldset-date">
+                <label class="booking-label" for="arrival-date">Дата Заезда:</label>
                 <input class="booking-date" type="text" name="arrival-date" id="arrival-date" placeholder="27 апреля 2020">
               </fieldset>
-              <fieldset class="booking-fieldset">
-                <label class="booking-label" for="departure-date">Дата заезда:</label>
+              <fieldset class="booking-fieldset fieldset-date">
+                <label class="booking-label" for="departure-date">Дата Выезда:</label>
                 <input class="booking-date" type="text" name="departure-date" id="departure-date" placeholder="27 апреля 2020">
               </fieldset>
               <fieldset class="booking-fieldset">
@@ -229,6 +229,9 @@
                 <label class="booking-label" for="kids">Дети:</label>
                 <input class="booking-guests" type="number" name="kids" id="kids" placeholder="2">
               </fieldset>
+              <button class="button">
+                Найти
+              </button>
 
 
 
