@@ -215,21 +215,31 @@
                 <label class="booking-label" for="arrival-date">Дата Заезда:</label>
                 <input class="booking-date" type="text" name="arrival-date" id="arrival-date" placeholder="27 апреля 2020">
               </fieldset>
+              <!-- <p class="attention-messadge messadge-error">Мы не можем отправить вас в прошлое.</p> -->
               <fieldset class="booking-fieldset fieldset-date">
                 <label class="booking-label" for="departure-date">Дата Выезда:</label>
                 <input class="booking-date" type="text" name="departure-date" id="departure-date" placeholder="27 апреля 2020">
               </fieldset>
+              <!-- <p class="attention-messadge">На эти даты есть свободные номера. Пока есть.</p> -->
               <fieldset class="booking-fieldset">
                 <legend class="visually-hidden">количество взрослых гостей</legend>
                 <label class="booking-label" for="adults">Взрослые:</label>
-                <input class="booking-guests" type="number" name="adults" id="adults" placeholder="2">
+                <div class="booking-guests-container">
+                  <button class="quantity-button buton-minus" type="button"></button>
+                  <input class="booking-guests" type="number" name="adults" id="adults" placeholder="2">
+                  <button class="quantity-button buton-plus" type="button"></button>
+                </div>
               </fieldset>
               <fieldset class="booking-fieldset">
                 <legend class="visually-hidden">количество детей</legend>
                 <label class="booking-label" for="kids">Дети:</label>
-                <input class="booking-guests" type="number" name="kids" id="kids" placeholder="2">
+                <div class="booking-guests-container">
+                  <button class="quantity-button buton-minus" type="button"></button>
+                  <input class="booking-guests" type="number" name="kids" id="kids" placeholder="2">
+                  <button class="quantity-button buton-plus" type="button"></button>
+                </div>
               </fieldset>
-              <button class="button">
+              <button class="button modal-button" type="submit">
                 Найти
               </button>
 

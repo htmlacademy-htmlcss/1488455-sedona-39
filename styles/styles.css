@@ -762,6 +762,55 @@ box-sizing: border-box;
   background-color: #f2f2f2;
 }
 
+.attention-messadge {
+  margin: 0;
+  display: block;
+  padding: 12px 20px;
+  grid-column: 1 / -1;
+  margin-left: 137px;
+}
+
+.booking-guests-container {
+  position: relative;
+  display: flex;
+  width: 110px;
+
+}
+
+.booking-guests {
+  padding: 14px 10px;
+  box-sizing: border-box;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000;
+  border-radius: 4px;
+  border: none;
+  background-color: #f2f2f2;
+  width: 110px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.quantity-button {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  top: 0;
+  width: 40px;
+  box-sizing: border-box;
+  border: none;
+
+}
+
+.modal-button {
+  grid-column: 1 / -1;
+  padding: 18px 20px;
+  font-size: 20px;
+  line-height: 24px;
+}
+
 
 /* catalog */
 .content-header {
