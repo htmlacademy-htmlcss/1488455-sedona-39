@@ -92,8 +92,7 @@ body {
   border-radius: 4px;
 }
 
-.button:hover,
-.button:focus-visible {
+.button:hover {
   background-color: #68a2ca;
 }
 
@@ -125,10 +124,6 @@ body {
 
 .navigation-logo:hover {
   opacity: 50%;
-}
-
-.navigation-logo:focus-visible {
-  outline: 3px solid #83b3d3;
 }
 
 .navigation-logo:active {
@@ -185,10 +180,6 @@ body {
   opacity: 50%;
 }
 
-.navigation-link:focus-visible:not(.button) {
-  outline: 3px solid #83b3d3;
-}
-
 .navigation-link:active {
   opacity: 30%;
 }
@@ -203,7 +194,7 @@ body {
 
 .navigation-link-current::after {
   position: absolute;
-  content: '';
+  content: "";
   height: 2px;
   background-color: #756257;
   right: 12px;
@@ -240,7 +231,6 @@ body {
 
 .button-user:focus-visible {
   background-color: #615048;
-  outline: none;
 }
 
 .likes-number {
@@ -341,7 +331,7 @@ body {
 }
 
 .advantages-item-title::after {
-  content: '';
+  content: "";
   display: block;
   margin: 30px auto 0;
   width: 60px;
@@ -444,7 +434,7 @@ body {
 }
 
 .service-item::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 81px;
   left: 162px;
@@ -508,12 +498,12 @@ body {
   margin-bottom: 96px;
   box-sizing: border-box;
   padding: 8px 50px;
+  text-decoration: none;
 }
 
 .button-search-hotel:hover,
 .button-search-hotel:focus-visible {
   background-color: #615048;
-  outline: none;
 }
 
 /* subscribe */
@@ -570,7 +560,6 @@ body {
 
 .form-email:focus-visible {
   background-color: #e6e6e6;
-  outline: 3px solid #83b3d3;
 }
 
 .form-email:active {
@@ -590,10 +579,6 @@ body {
   box-sizing: border-box;
   border: none;
   border-radius: 0 4px 4px 0;
-}
-
-.button-send:focus-visible {
-  outline: none;
 }
 
 /* field */
@@ -714,11 +699,12 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  display: flex;
   width: 100%;
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
   z-index: 5;
+  display: none;
+
 }
 
 .modal-booking {
@@ -732,7 +718,8 @@ body {
 }
 
 .modal-container-opened {
-  display: none;
+  display: flex;
+
 }
 
 .modal-close-button {
@@ -757,7 +744,6 @@ body {
 
 .modal-close-button:focus-visible {
   background-color: #e6e6e6;
-  outline: 3px solid #83b3d3;
 }
 
 .modal-close-button:active {
@@ -908,32 +894,32 @@ opacity: 30%;
   position: relative;
 }
 
-.quantity-button {
+.buton-minus:hover::after  {
   color: #000000;
 }
 
 .buton-minus::after {
-  content: '';
+  content: "";
   display: block;
   width: 14px;
   height: 2px;
   opacity: 30%;
-  background-color: #000;
+  background-color: #000000;
   position: absolute;
 }
 
 .buton-plus::after {
-  content: '';
+  content: "";
   display: block;
   width: 14px;
   height: 2px;
-  background-color: #000;
+  background-color: #000000;
   opacity: 30%;
   position: absolute;
 }
 
 .buton-plus::before {
-  content: '';
+  content: "";
   display: block;
   width: 14px;
   height: 2px;
@@ -997,7 +983,7 @@ opacity: 30%;
 }
 
 .tooltip-text:after {
-  content: '';
+  content: "";
   background-image: url("../image/icons/triangle.svg");
   width: 19px;
   height: 9px;
@@ -1058,7 +1044,7 @@ opacity: 30%;
 }
 
 .breadcrumbs-item:not(:last-child)::after {
-  content: '';
+  content: "";
   display: block;
   width: 6px;
   height: 10px;
@@ -1168,7 +1154,7 @@ opacity: 30%;
 
 .control-input[type="checkbox"]:checked + .control-mark::before,
 .control-input[type="checkbox"]:checked + .control-mark::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 5px;
   left: 4px;
@@ -1201,7 +1187,7 @@ opacity: 30%;
 
 .control-input[type="radio"]:checked + .control-mark-circle::before,
 .control-input[type="radio"]:checked + .control-mark-circle::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 50%;
   left: 50%;
