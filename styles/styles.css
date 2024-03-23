@@ -898,12 +898,14 @@ body {
   text-align: center;
   padding: 14px 2px;
   box-sizing: border-box;
+  appearance: textfield;
 }
 
 .booking-guests::-webkit-outer-spin-button,
 .booking-guests::-webkit-inner-spin-button {
   appearance: none;
   margin: 0;
+
 }
 
 .booking-guests:hover,
@@ -1345,6 +1347,7 @@ body {
   font-weight: 700;
   border: none;
   box-sizing: border-box;
+  appearance: textfield;
 }
 
 .range-input::-webkit-outer-spin-button,
@@ -1422,6 +1425,7 @@ body {
 .select-control {
   width: 100%;
   padding: 14px 19px;
+  padding-right: 45px;
   color: #333333;
   background-color: #ffffff;
   font-family: inherit;
@@ -1441,12 +1445,10 @@ body {
 .select-control:focus {
   outline: 2px solid #68a2Ca;
   cursor: pointer;
-  border-radius: 6px;
 }
 
 .select-control:disabled {
   outline: 2px solid rgb(0, 0, 0, 0.3);
-  border-radius: 6px;
 }
 
 .sorting-list {
