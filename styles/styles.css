@@ -217,6 +217,14 @@ body {
   padding: 22px 11px;
 }
 
+.navigation-user-link:hover {
+  opacity: 0.5;
+}
+
+.navigation-user-link:active {
+  opacity: 0.3;
+}
+
 .button-user {
   display: block;
   padding: 8px 35px;
