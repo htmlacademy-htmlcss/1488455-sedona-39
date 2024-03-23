@@ -1409,7 +1409,7 @@ body {
 
 .result-search-title {
   text-align: left;
-  max-width: 338px;
+  max-width: 345px;
   margin-right: 200px;
 }
 
@@ -1438,6 +1438,7 @@ body {
   appearance: none;
   border: none;
   box-sizing: border-box;
+  border-radius: 6px;
 }
 
 .select-control:hover,
