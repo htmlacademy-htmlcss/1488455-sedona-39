@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
-
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" size="32x32" href="image/favicon-32x32.png">
   </head>
-
   <body>
     <div class="page-container">
       <header class="main-header" data-test="header">
@@ -111,8 +109,8 @@
                     </li>
                     <li class="catalog-filter-item">
                       <label class="control">
-                        <input class="visually-hidden control-input control-input-circle" type="radio" name="hotel-group"
-                          value="motel">Мотель
+                        <input class="visually-hidden control-input control-input-circle" type="radio"
+                          name="hotel-group" value="motel">Мотель
                         <span class="control-mark control-mark-circle"></span>
                       </label>
                     </li>
@@ -127,29 +125,33 @@
                 </fieldset>
               </div>
               <div class="catalog-fieldset-wrapper">
-              <fieldset class="catalog-filter-group filter-column-prise">
-                <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-                <div class="range">
-                  <div class="range-wrapper-inputs">
-                    <label class="catalog-filter-label" for="min-prise"> от </label>
-                    <input class="range-input range-input-less" type="number" value="0" name="min-prise" id="min-prise">
-                    <label class="catalog-filter-label" for="max-prise"> до </label>
-                    <input class="range-input range-input-more" type="text" value="9000" name="max-prise" id="max-prise">
-                  </div>
-                  <div class="range-scale">
-                    <div class="range-bar" style="left: 0; width: 226px">
-                      <button class="range-toggle toggle-min" type="button">
-                      </button>
-                      <button class="range-toggle toggle-max" type="button">
-                      </button>
+                <fieldset class="catalog-filter-group filter-column-prise">
+                  <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+                  <div class="range">
+                    <div class="range-wrapper-inputs">
+                      <label class="catalog-filter-label" for="min-prise"> от </label>
+                      <input class="range-input range-input-less" type="number" value="0" name="min-prise"
+                        id="min-prise">
+                      <label class="catalog-filter-label" for="max-prise"> до </label>
+                      <input class="range-input range-input-more" type="text" value="9000" name="max-prise"
+                        id="max-prise">
+                    </div>
+                    <div class="range-scale">
+                      <div class="range-bar" style="left: 0; width: 226px">
+                        <button class="range-toggle toggle-min" type="button">
+                        </button>
+                        <span class="visually-hidden">уменьшить стоимость</span>
+                        <button class="range-toggle toggle-max" type="button">
+                        </button>
+                        <span class="visually-hidden">увеличить стоимость</span>
+                      </div>
                     </div>
                   </div>
+                </fieldset>
+                <div class="catalog-filter-column filter-column-button">
+                  <button class="button button-apply" type="submit">Применить</button>
+                  <button class="button button-reset" type="reset">Сбросить</button>
                 </div>
-              </fieldset>
-              <div class="catalog-filter-column filter-column-button">
-                <button class="button button-apply" type="submit">Применить</button>
-                <button class="button button-reset" type="reset">Сбросить</button>
-              </div>
               </div>
             </form>
           </div>
@@ -371,7 +373,6 @@
           <span class="visually-hidden">лого HTML академии</span>
         </a>
       </footer>
-      </div>
+    </div>
   </body>
-
 </html>
